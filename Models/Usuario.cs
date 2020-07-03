@@ -42,4 +42,6 @@ namespace ecommerce.Models
         public int Cod { get => cod; set => cod = value; }
         public Endereco Endereco1 { get => endereco; set => endereco = value; }
     }
+
+    /**/
 }
