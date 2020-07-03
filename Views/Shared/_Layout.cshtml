@@ -183,69 +183,78 @@
                                 </p>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a href="/cadastrarproduto" class="nav-link">
-                                <i class="nav-icon fas fa-box-open"></i>
-                                <p>
-                                    Cadastrar Produtos
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/cadastrarproduto/IndexListar" class="nav-link">
-                                <i class="nav-icon fas fa-box-open"></i>
-                                <p>
-                                    Pesquisar Produtos
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/catalogo" class="nav-link">
-                                <i class="nav-icon fab fa-product-hunt"></i>
-                                <p>
-                                    Catálogo
-                                </p>
-                            </a>
-                        </li>
 
-                        <li class="nav-item">
-                            <a href="/Logar/Sair" class="nav-link">
-                                <i class="nav-icon far fa-user"></i>
-                                <p>
-                                    Sair
-                                </p>
-                            </a>
-                        </li>
+                        @{
+
+                            if (httpContextaccessor.HttpContext.User.Claims.Count() > 0)
+                            {
+                                <li class="nav-item">
+                                    <a href="/cadastrarproduto" class="nav-link">
+                                        <i class="nav-icon fas fa-box-open"></i>
+                                        <p>
+                                            Cadastrar Produtos
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/cadastrarproduto/IndexListar" class="nav-link">
+                                        <i class="nav-icon fas fa-box-open"></i>
+                                        <p>
+                                            Pesquisar Produtos
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/catalogo" class="nav-link">
+                                        <i class="nav-icon fab fa-product-hunt"></i>
+                                        <p>
+                                            Catálogo
+                                        </p>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="/Logar/Sair" class="nav-link">
+                                        <i class="nav-icon far fa-user"></i>
+                                        <p>
+                                            Sair
+                                        </p>
+                                    </a>
+                                </li>
+                            }
+                        }
+
+
 
                         @*<li class="nav-item has-treeview">
-                                <a href="#" class="nav-link">
-                                    <i class="nav-icon fas fa-tachometer-alt"></i>
-                                    <p>
-                                        Gerenciamento básico
-                                        <i class="right fas fa-angle-left"></i>
-                                    </p>
-                                </a>
-                                <ul class="nav nav-treeview">
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Usuário</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="./index2.html" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Produto</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="./index3.html" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Fornecedores</p>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>*@
+            <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <p>
+                    Gerenciamento básico
+                    <i class="right fas fa-angle-left"></i>
+                </p>
+            </a>
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Usuário</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="./index2.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Produto</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="./index3.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Fornecedores</p>
+                    </a>
+                </li>
+            </ul>
+        </li>*@
 
 
                     </ul>

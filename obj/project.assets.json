@@ -7444,11 +7444,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Z:\\LINGUAGENS DE PROGRAMAÇÃO IV\\2_BIMESTRE\\TRABALHOS\\HEROKO\\ecommerce22.06.2020GABRIELNAVAS__VARIAS FOTOS_PROJETO_ATUAL_COM_MODAL\\ecommerce.csproj",
+      "projectUniqueName": "C:\\Users\\Navas\\Desktop\\HEROKO\\ecommerce22.06.2020GABRIELNAVAS__VARIAS FOTOS_PROJETO_ATUAL_COM_MODAL\\ecommerce.csproj",
       "projectName": "ecommerce",
-      "projectPath": "Z:\\LINGUAGENS DE PROGRAMAÇÃO IV\\2_BIMESTRE\\TRABALHOS\\HEROKO\\ecommerce22.06.2020GABRIELNAVAS__VARIAS FOTOS_PROJETO_ATUAL_COM_MODAL\\ecommerce.csproj",
+      "projectPath": "C:\\Users\\Navas\\Desktop\\HEROKO\\ecommerce22.06.2020GABRIELNAVAS__VARIAS FOTOS_PROJETO_ATUAL_COM_MODAL\\ecommerce.csproj",
       "packagesPath": "C:\\Users\\Navas\\.nuget\\packages\\",
-      "outputPath": "Z:\\LINGUAGENS DE PROGRAMAÇÃO IV\\2_BIMESTRE\\TRABALHOS\\HEROKO\\ecommerce22.06.2020GABRIELNAVAS__VARIAS FOTOS_PROJETO_ATUAL_COM_MODAL\\obj\\",
+      "outputPath": "C:\\Users\\Navas\\Desktop\\HEROKO\\ecommerce22.06.2020GABRIELNAVAS__VARIAS FOTOS_PROJETO_ATUAL_COM_MODAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Navas\\AppData\\Roaming\\NuGet\\NuGet.Config",
