@@ -24,8 +24,10 @@
                 for (let i = 0; i < prods.length; i++) {
 
                     let fotosModal = `
-                                <div class="carousel-item active">
-                                    <img  src="/CadastrarProduto/ObterUmaFoto?id=${prods[i].cod}&numero=${1}" alt="pc${1}" style="width: 150px; height: 150px; p-3;">
+                                <div class="carousel-item active style="text-align: center"">
+                                    <img  src="/CadastrarProduto/ObterUmaFoto?id=${prods[i].cod}&numero=${1}" 
+                                        alt="pc${1}" 
+                                        style="width: 220px; height: 250px; p-3;">
                                 </div>
                                 `;
 
@@ -35,8 +37,10 @@
 
                     for (let j = 2; j <= prods[i].qntdFotos; j++) {
                         fotosModal += `
-                                 <div class="carousel-item style="text-align: center">
-                                    <img style="width: 100%; height: auto;" src="/CadastrarProduto/ObterUmaFoto?id=${prods[i].cod}&numero=${j}" alt="pc${j}" style="width: 150px; height: 150px; p-3;">
+                                 <div class="carousel-item style="text-align: center;">
+                                    <img    src="/CadastrarProduto/ObterUmaFoto?id=${prods[i].cod}&numero=${j}" 
+                                            alt="pc${j}" 
+                                            style="width: 220px; height: 250px; p-3;">
                                 </div>
                            `
 
@@ -46,7 +50,7 @@
                     }
 
                     prodsHtml += `
-                            <div class="col-3 d-flex align-items-center p-3 m-3" style="background-color: rgb(223, 223, 223);">
+                            <div class="col-3 carrosel_item d-flex align-items-center p-3 m-3">
                             <div class="box box-default">
                                 <div class="box-header with-border">
                                     <div class="row p-1 ">
@@ -56,20 +60,18 @@
                                               <ol class="carousel-indicators">
                                                 ${indicators}
                                               </ol>
-                                              <div class="carousel-inner ">
+                                              <div class="carousel-inner"">
                                                 ${fotosModal}
                                               </div>
-                                              <a class="carousel-control-prev" href="#carouselExampleIndicators${i}" role="button" data-slide="prev">
-                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                              <a class="carousel-control-prev" href="#carouselExampleIndicators${i}" role="button" data-slide="prev" >
+                                                <span  class="carousel-control-prev-icon carousel-control-prev-icon" aria-hidden="true"></span>
                                                 <span class="sr-only">Previous</span>
                                               </a>
                                               <a class="carousel-control-next" href="#carouselExampleIndicators${i}" role="button" data-slide="next">
-                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="carousel-control-next-icon carousel-control-next-icon" aria-hidden="true"></span>
                                                 <span class="sr-only">Next</span>
                                               </a>
                                             </div>
-
-                                        
                                         </div>
                                     </div>
                                     <div class="row p-1">

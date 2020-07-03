@@ -42,7 +42,6 @@
             }
         }
 
-
         fetch('/CadastrarProduto/InserirProduto', config)
             .then(resp => resp.json())
             .then(resp => {
@@ -87,9 +86,7 @@
                                 document.getElementById('foto').files[0] = null;
                                 document.getElementById('foto').files[1] = null;
 
-                                for (let i = 0; i < fotos.length; i++) {
-                                    fotos[i] = undefined;
-                                }
+                                document.getElementById('foto').reset();
                             }
 
                             document.getElementById('divMsg').innerHTML = resp.msg;
