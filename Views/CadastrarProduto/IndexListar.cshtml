@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewData["Title"] = "Pesquisar produtos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section css {
+}
+
+@section js {
+    <script src="~/view/CadastrarProduto/indexListar.js"></script>
+}
+
+
+<div class="col-sm-12 d-flex justify-content-center align-items-center flex-wrap">
+
+    <div class="box box-info">
+
+        <div class="box-header with-border mb-5 col-sm-12 d-flex justify-content-center align-items-center">
+            <h3 class="box-title">Pesquisar produtos</h3>
+            <div class="divMsgs"></div>
+        </div>
+
+        <div class="box-body col-sm-10 d-flex justify-content-center align-items-center flex-wrap">
+            <div class="col-sm-12 d-flex d-flex justify-content-start align-items-center flex-wrap">
+                <div class="form-group col-sm-12 d-flex justify-content-start align-items-center flex-wrap">
+                    <div class="col-sm-4 d-flex justify-content-start align-items-center">
+                        <label for="txtBuscarProdNome">Nome do produto</label> <br />
+
+                    </div>
+                    <div class="col-sm-6 d-flex justify-content-start align-items-center">
+                        <input type="text" id="txtBuscarProdNome" />
+
+                    </div>
+                    <div class="col-sm-2 d-flex justify-content-start align-items-center">
+                        <input type="button"
+                               onclick="indexListar.btnPesquisar()"
+                               value="Pesquisar"
+                               id="btnPesquisar" />
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group col-sm-12 d-flex justify-content-start align-items-center">
+                <table id="tbProdutos" style="display: none" class="table">
+
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Código</th>
+                            <th>Nome</th>
+                            <th>Descrição</th>
+                            <th>Valor</th>
+                            <th>Estrelas</th>
+                            <th>Categoria</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbBodyProds">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+

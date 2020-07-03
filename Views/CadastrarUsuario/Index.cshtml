@@ -1,0 +1,130 @@
+﻿
+@{
+    ViewData["Title"] = "Cadastrar Usuário";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section css {
+    <link href="~/view/CadastroUsuario/index.css" rel="stylesheet" />
+}
+
+@section js {
+    <script src="~/view/CadastroUsuario/index.js?id=3"></script>
+}
+
+<div class="col--sm-12 d-flex justify-content-center align-items-center flex-wrap">
+
+    <div class="box box-info">
+        <div class="box-header with-border">
+            <h3 class="box-title">Cadastre-se</h3>
+            <h4 id="divMsg"></h4>
+        </div>
+        <!-- /.box-header -->
+        <!-- form start -->
+        <div class="box-body">
+            <form class="form-horizontal">
+
+                <div class="col-12 d-flex justify-content-between align-items-center flex-wrap">
+
+
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="nome" class="col-sm-12">Nome completo</label>
+
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="cpf" class="col-sm-2">CPF</label>
+
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" name="cpf" id="cpf" placeholder="CPF">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="data" class="col-sm-12">Data Nascimento</label>
+
+                            <div class="col-sm-10">
+                                <input type="date" class="form-control" name="data" id="data">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="Rua" class="col-sm-2">Rua</label>
+
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" name="rua" id="rua" placeholder="Nome da rua...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <label for="num" class="col-sm-2">Número</label>
+
+                            <div class="col-sm-12">
+                                <input type="number" class="form-control" name="num" id="num" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="cep" class="col-sm-2">CEP</label>
+
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" name="cep" id="cep" placeholder="CEP">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="email" class="col-sm-2">Email</label>
+
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="password" class="col-sm-2">Senha</label>
+
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" name="password" id="password" placeholder="Senha">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        <!-- /.box-body -->
+        <div class="box-footer">
+            <div class="col-sm-12 d-flex justify-content-start pl-3">
+                <div class="col-sm-1 mr-3">
+                    <button type="button" class="btn btn-info pull-right" id="btncadastrar" onclick="index.btnCadastrarUsuario()">
+                        Cadastrar
+                    </button>
+                </div>
+                <div class="col-sm-1">
+                    <button type="button" class="btn btn-default">Limpar</button>
+                </div>
+                <!-- /.box-footer -->
+            </div>
+        </div>
+    </div>
+</div>

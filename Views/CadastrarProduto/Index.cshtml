@@ -1,0 +1,115 @@
+﻿
+@{
+    ViewData["Title"] = "Cadastrar Produto";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section css {
+
+}
+
+@section js {
+    <script src="~/view/CadastrarProduto/index.js"></script>
+}
+
+<div class="col--sm-12 d-flex justify-content-center align-items-center flex-wrap">
+
+    <div class="box box-info">
+        <div class="box-header with-border ml-4">
+            <h3 class="box-title">Cadastrar Produto</h3>
+            <h4 id="divMsg"></h4>
+        </div>
+        <!-- /.box-header -->
+        <!-- form start -->
+        <div class="box-body">
+            <form class="form-horizontal">
+
+                <div class="col-8 d-flex justify-content-between align-items-center flex-wrap">
+                    <div class="col-sm-8">
+                        <div class="form-group">
+                            <label for="nome" class="col-sm-12">Nome</label>
+
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 ">
+                        <div class="form-group">
+                            <label for="categoria" class="col-sm-12">Categoria</label>
+
+                            <div class="col-sm-11">
+                                <select name="categoria" id="categoria">
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3  d-flex justify-content-start align-items-start flex-wrap">
+                        <div class="form-group">
+                            <label for="valor" class="col-sm-12">Valor de venda</label>
+
+                            <div class="col-sm-12">
+                                <input type="number" class="form-control" name="valor" id="valor"
+                                       placeholder="Valor...">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-3  d-flex justify-content-start align-items-start flex-wrap">
+                        <div class="form-group">
+                            <label for="estoque" class="col-sm-12">Estoque inicial</label>
+
+                            <div class="col-sm-12">
+                                <input type="number" class="form-control" name="estoque" id="estoque"
+                                       placeholder="Estoque...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-2 d-flex justify-content-center align-items-end">
+                        <div class="form-group">
+                            <label for="foto">Fotos do Produto</label> <br />
+                            <input type="file" id="foto" multiple="multiple">
+
+                            <p class="help-block">Anexar fotos do produto.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label for="descricao" class="col-sm-2">Descrição</label>
+
+                            <div class="col-sm-12">
+                                <textarea type="text" class="form-control"
+                                          rows="5"
+                                          name="descricao"
+                                          id="descricao"
+                                          placeholder="Descrição do produto..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+        <!-- /.box-body -->
+        <div class="box-footer">
+            <div class="col-sm-12 d-flex justify-content-start pl-3">
+                <div class="col-sm-1 mr-3">
+                    <button type="button" class="btn btn-info pull-right"
+                            id="btncadastrar"
+                            onclick="index.btnInserirProduto()">
+                        Cadastrar
+                    </button>
+                </div>
+                <!-- /.box-footer -->
+            </div>
+        </div>
+
+
+    </div>
+</div>

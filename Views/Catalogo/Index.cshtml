@@ -1,0 +1,94 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section css {
+    <link href="~/view/Catologo/index.css" rel="stylesheet" />
+}
+
+@section js {
+    <script src="~/view/Catologo/index.js"></script>
+}
+<!-- coluna principal -->
+<div class="col-12 d-flex justify-content-center align-content-start flex-wrap">
+
+    <div class="col-12 d-flex justify-content-center align-content-center flex-row">
+        <div class="col-10 d-flex justify-content-center align-content-center"
+             style="background-color: rgb(223, 223, 223);">
+            <div class="row" id="divMsgs">
+                <h1>Boas compras!!</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="prods" class="col-12 justify-content-center d-flex align-items-center p-3 m-3 flex-wrap">
+
+    </div>
+
+</div>
+
+
+
+
+
+@*@for (var i = 0; i < 10; i++)
+{
+    <div class="col-3 d-flex align-items-center p-3 m-3" style="background-color: rgb(223, 223, 223);">
+         box 
+        <div class="box box-default">
+             header 
+            <div class="box-header with-border">
+                <div class="row p-1">
+                    <div class="col">
+                        <img src="img/pc1.jpg" alt="pc1" style="max-width: 100%;">
+                    </div>
+                </div>
+                <div class="row p-1">
+                    <div class="col">
+                        <div class="box-tools pull-right">
+                            <button class='btn btn-block btn-primary'>Ver mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             body 
+            <div class="box-body">
+                <div class="col">
+                    <strong><h4>Notebook Lenovo Ideapad S145</h4></strong>
+                    <div class="row pl-2 text-success">
+                        <h3>R$ 2299,00</h3>
+
+                    </div>
+                    <div class="row">
+                        <p class='text-dark'>
+                            <h6>
+                                Intel Core i5-8265U 8GB, 1TB,
+                                Placa de Vídeo NVIDIA GeForce MX110 com 2GB dedicados GDDR5,
+                                Tela HD 15.6'', Windows 10, 81S90008BR
+                            </h6>
+                        </p>
+                    </div>
+                </div>
+            </div>
+             footer 
+            <div class="box-footer">
+                <div class="row">
+                    <div class="col text-primary">
+                        <h6>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+}*@

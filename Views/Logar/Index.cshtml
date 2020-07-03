@@ -1,0 +1,62 @@
+﻿
+@{
+    ViewData["Title"] = "Logar Usuário";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section css {
+    <link href="~/view/Logar/index.css" rel="stylesheet" />
+}
+
+@section js  {
+    <script src="~/view/Logar/index.js"></script>
+}
+
+<div class="col-sm-12 d-flex justify-content-center align-items-center flex-wrap">
+
+    <div class="box box-info">
+        <div class="box-header with-border">
+            <h3 class="box-title">Faça o login!</h3>
+            <h4 id="divMsg"></h4>
+        </div>
+        <!-- /.box-header -->
+        <!-- form start -->
+        <div class="box-body">
+            <form class="form-horizontal">
+                <div class="form-group col-12">
+                    <label for="email" class="col-sm-6 control-label">Email</label>
+
+                    <div class="col-sm-12">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                    </div>
+                </div>
+
+                <div class="form-group col-sm-12">
+                    <label for="password" class="col-sm-9 control-label">Senha</label>
+
+                    <div class="col-sm-12">
+                        <input type="password" class="form-control" name="password" id="password" placeholder="Senha">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-7">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Lembrar-me
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- /.box-body -->
+        <div class="box-footer">
+            <button type="button"
+                    class="btn btn-info pull-right"
+                    onclick="index.btnLogar()">
+                Logar
+            </button>
+        </div>
+        <!-- /.box-footer -->
+    </div>
+</div>
