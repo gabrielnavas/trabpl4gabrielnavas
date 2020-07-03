@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ecommerce.Controllers
 {
-    [Authorize("CookieAuth")]
     public class CatalogoController : Controller
     {
         public IActionResult Index()
