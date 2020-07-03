@@ -32,7 +32,7 @@
                                 `;
 
                     let indicators = `
-                                 <li data-target="#carouselExampleIndicators${1}" data-slide-to="0" class="active"></li>
+                                 <li style="background-color: gray;" data-target="#carouselExampleIndicators${1}" data-slide-to="0" class="active"></li>
                                 `
 
                     for (let j = 2; j <= prods[i].qntdFotos; j++) {
@@ -45,7 +45,7 @@
                            `
 
                         indicators += `
-                                <li data-target="#carouselExampleIndicators${i}" data-slide-to="${j-1}"></li>
+                                <li style="background-color: gray;" data-target="#carouselExampleIndicators${i}" data-slide-to="${j-1}"></li>
                             `
                     }
 
@@ -64,23 +64,17 @@
                                                 ${fotosModal}
                                               </div>
                                               <a class="carousel-control-prev" href="#carouselExampleIndicators${i}" role="button" data-slide="prev" >
-                                                <span  class="carousel-control-prev-icon carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span style="background-color: gray;" class="carousel-control-prev-icon carousel-control-prev-icon" aria-hidden="true"></span>
                                                 <span class="sr-only">Previous</span>
                                               </a>
                                               <a class="carousel-control-next" href="#carouselExampleIndicators${i}" role="button" data-slide="next">
-                                                <span class="carousel-control-next-icon carousel-control-next-icon" aria-hidden="true"></span>
-                                                <span class="sr-only">Next</span>
+                                                <span style="background-color: gray;" class="carousel-control-next-icon carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only" ">Next</span>
                                               </a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row p-1">
-                                        <div class="col">
-                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                                                Mais Fotos
-                                            </button>
-                                        </div>
-                                    </div>
+                                   
                                 </div>
 
                                 <div class="box-body">
@@ -117,6 +111,15 @@
 
                       
                         `;
+
+                        /* <div class="row p-1">
+                                            <div class="col">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#carouselExampleIndicators$">
+                                                    Mais Fotos
+                                                </button>
+                                            </div>
+                                        </div>
+                                        */
                 }
 
                 const contentProds = document.getElementById('prods')
