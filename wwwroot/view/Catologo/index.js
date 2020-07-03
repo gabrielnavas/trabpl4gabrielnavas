@@ -25,7 +25,7 @@
 
                     let fotosModal = `
                                 <div class="carousel-item active style="text-align: center"">
-                                    <img  src="/CadastrarProduto/ObterUmaFoto?id=${prods[i].cod}&numero=${1}" 
+                                    <img  src="/Catalogo/ObterUmaFoto?id=${prods[i].cod}&numero=${1}" 
                                         alt="pc${1}" 
                                         style="width: 220px; height: 250px; p-3;">
                                 </div>
@@ -38,7 +38,7 @@
                     for (let j = 2; j <= prods[i].qntdFotos; j++) {
                         fotosModal += `
                                  <div class="carousel-item style="text-align: center;">
-                                    <img    src="/CadastrarProduto/ObterUmaFoto?id=${prods[i].cod}&numero=${j}" 
+                                    <img    src="/Catalogo/ObterUmaFoto?id=${prods[i].cod}&numero=${j}" 
                                             alt="pc${j}" 
                                             style="width: 220px; height: 250px; p-3;">
                                 </div>

@@ -157,20 +157,20 @@ namespace ecommerce.Controllers
             });
         }
 
-        public IActionResult ObterUmaFoto(int id, int numero)
-        {
-            CamadaNegocio.ProdutoCN produtoCN = new CamadaNegocio.ProdutoCN();
+        //public IActionResult ObterUmaFoto(int id, int numero)
+        //{
+        //    CamadaNegocio.ProdutoCN produtoCN = new CamadaNegocio.ProdutoCN();
 
-            byte[] foto = produtoCN.ObterUmaFoto(id, numero);
+        //    byte[] foto = produtoCN.ObterUmaFoto(id, numero);
 
 
-            if(foto == null)
-            {
-                return File("~/img/sem_foto.jpg", "image/jpg");
-            }
-            return File(foto, "image/jpg");
+        //    if(foto == null)
+        //    {
+        //        return File("~/img/sem_foto.jpg", "image/jpg");
+        //    }
+        //    return File(foto, "image/jpg");
 
-        }
+        //}
 
         //public IActionResult ObterFotoDois(int id)
         //{
